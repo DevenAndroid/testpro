@@ -1,16 +1,38 @@
-# testpro
+# Flutter Firebase To-Do App
 
-A new Flutter project.
+A simple To-Do list app built with **Flutter** and **Firebase Firestore**, allowing users to:
+- Add, update, and delete tasks.
+- Mark tasks as completed or pending.
+- Filter tasks by status (All, Completed, Pending).
+- Each task includes a title, description, and due date.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Features
+- Firebase Authentication for user-specific tasks.
+- Real-time Firestore database updates.
+- Beautiful UI with task filtering.
+- Fully responsive design.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##  Folder Structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+lib/
+│
+├── main.dart # Entry point
+├── firebase_options.dart # Firebase configuration (auto-generated)
+│
+├── auth/
+│ ├── login_screen.dart # User login screen
+│ └── signup_screen.dart # User signup screen
+│
+├── home/
+│ └── todo_screen.dart # Main To-Do screen
+│
+├── widgets/
+│ ├── common_text_field.dart # Reusable text field widget
+│ └── common_button.dart # Reusable button widget
+│
+└── theme/
+└── app_theme.dart # App theme colors and constants
